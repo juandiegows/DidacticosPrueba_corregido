@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="blog_details">
-        <a href="/">Volver</a>
+        <a href="{{ URL::previous() }}">Volver</a>
         <h2 class="title">{{ $blog->title }}</h2>
         <p class="description">{{ $blog->content }}</p>
         <div class="details">

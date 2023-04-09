@@ -18,7 +18,7 @@
         <div class="links_login">
 
             <a class="header__login" href="/">Iniciar sesion</a>
-            <a class="header__login"  href="/" href="">Registrar</a>
+            <a class="header__login"  href="/sign_in" href="">Registrar</a>
         </div>
 
     </header>

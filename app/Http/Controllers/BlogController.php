@@ -16,8 +16,8 @@ class BlogController extends Controller
     }
     public function search(Request $request)
     {
-        $fecha = $request->input('fecha');
-        $blogs = Blog::whereDate('created_at', $fecha)->get();
-        return view('welcome', ['blogs' => $blogs, 'date' => $fecha]);
+        $date = $request->input('date');
+        $blogs = Blog::whereDate('created_at', $date)->get();
+        return view('welcome', ['blogs' => $blogs, 'date' => $date]);
     }
 }

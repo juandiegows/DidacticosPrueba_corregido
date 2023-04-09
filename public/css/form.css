@@ -1,0 +1,64 @@
+.form_add {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 70rem;
+    padding: 1rem;
+    color: black;
+    border-radius: 1rem;
+    margin: 2rem  auto;
+    border: 1px solid #08d42aa6;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.3rem;
+}
+input,input:active, input:focus {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    color: #08d42aa6;
+    border:1px solid #08d42aa6;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1vw;
+    box-sizing: border-box;
+}
+input:focus {
+    border: 2px solid #08d42aa6;
+}
+label {
+    font-size: 1vw;
+    color: #353232;
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+}
+.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+button, a {
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    color: white;
+    background-color: #02500f;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1vw;
+}
+.btnCancel {
+    background-color: darkred;
+}
