@@ -6,5 +6,6 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::view('/', 'welcome', ['blogs' => Blog::All()]);
+Route::view('/', 'welcome', ['blogs' => Blog::All(),  'date' => date('Y-m-s H:i:s')]);
 Route::get('/blog/{skug}', [BlogController::class, 'show']);
+Route::get('search', [BlogController::class, 'search']);

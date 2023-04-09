@@ -1,6 +1,13 @@
 @extends('template')
 
 @section('content')
+  <div class="filter">
+        <h3>Seleccionar fecha</h3>
+        <form class="form" action="search" method="get">
+            <input class="date" type="date" id="fecha" name="fecha" value="{{$date}}" required>
+            <button class="btn" type="submit">Buscar</button>
+        </form>
+    </div>
     <section class="blogs">
         <h1 class="title">Blogs </h1>
         @foreach ($blogs as $blog)
