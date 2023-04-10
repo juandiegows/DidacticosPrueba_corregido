@@ -13,13 +13,16 @@ html {
 
 html {
     font-size: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
 body {
-    padding: 1rem 5rem;
+    width: 100%;
     box-sizing: border-box;
     font-size: 1.6rem;
+
 }
 
 .header {
@@ -68,13 +71,15 @@ body {
 .users {
     margin-top: 3rem;
     margin-left: 5%;
-    width: 100%;
+    width: 90%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     font-size: 1.6rem;
 }
 
 .user {
+    width: 100%;
     font-family: 1.4rem;
     display: flex;
     gap: 2rem;
@@ -87,17 +92,29 @@ body {
 
 
 .link {
+    outline: none;
+    border: none;
+    background: none;
+    border: 0;
+    font: inherit;
+    width: 100%;
     cursor: pointer;
     color: white;
     background-color: #dc5b3e;
     max-width: 10rem;
-    padding: 0.2rem 0.8rem;
     border-radius: 4px;
     text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+.link-disable{
+    color: white;
+    background-color: #3b3b3bbd;
 }
 .links {
+
     cursor: pointer;
-    color:  #dc5b3e;
+    color: #dc5b3e;
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: 600;

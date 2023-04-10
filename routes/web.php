@@ -14,8 +14,8 @@ Route::get('sign_in', [UserController::class, 'signIn']);
 
 Route::Post('user/create', [UserController::class, 'create']);
 Route::get('dashboard/user', [UserController::class, 'index'])->middleware('auth');
-Route::get('dashboard/user/{id}/activate', [UserController::class, 'activate'])->middleware('auth');
-Route::get('dashboard/user/{id}/suspend', [UserController::class, 'suspend'])->middleware('auth');
+Route::post('dashboard/user/{id}/activate', [UserController::class, 'activate'])->middleware('auth');
+Route::post('dashboard/user/{id}/suspend', [UserController::class, 'suspend'])->middleware('auth');
 
 Route::get('login', [UserController::class, 'login'])->name('login')->middleware('guest');
 Route::post('login', [UserController::class, 'loginPost']);

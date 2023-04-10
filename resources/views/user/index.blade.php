@@ -12,10 +12,18 @@
                     <p>{{ $user->email }}</p>
                     @if (Auth::user()->id != $user->id)
                         @if ($user->active)
-                            <a class="link" href="/dashboard/user/{{$user->id}}/suspend">Suspender</a>
+                            <form action="/dashboard/user/{{ $user->id }}/suspend" method="POST">
+                                @csrf
+                                <input class="link" type="submit" value="Suspender">
+                            </form>
                         @else
-                            <a class="link" href="/dashboard/user/{{$user->id}}/activate" >activar</a>
+                            <form action="/dashboard/user/{{ $user->id }}/activate" method="POST">
+                                @csrf
+                                <input class="link" type="submit" value="activar">
+                            </form>
                         @endif
+                    @else
+                        <a class="link link-disable">Admin</a>
                     @endif
                 </div>
             @endforeach
