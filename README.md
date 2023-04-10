@@ -9,4 +9,8 @@
 
 ## About Laravel
 
-la clave por defecto es ```admin```
+### credeciales por defecto
+
+correo : ```mejiamaestrejuandiego@gmail.com```
+
+clave :  ```admin```
