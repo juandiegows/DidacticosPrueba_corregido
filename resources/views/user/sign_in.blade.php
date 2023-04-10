@@ -9,7 +9,7 @@
     @csrf
     <div class="group">
         <label for="name">Nombre</label>
-        <input type="text" name="name" id="name" placeholder="Ingrese su nombre" value="{{ old('name') }}">
+        <input  type="text" name="name" id="name" placeholder="Ingrese su nombre" value="{{ old('name') }}">
         @error('name')
             <small style="color : red" class="Errors">{{ $message }}</small>
         @enderror

@@ -18,7 +18,7 @@
     width: 100%;
     gap: 0.3rem;
 }
-input,input:active, input:focus {
+input,textarea, input:active, input:focus {
     outline: none;
     border: none;
     background-color: transparent;

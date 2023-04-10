@@ -19,7 +19,7 @@
                     <a class="links" href="/dashboard/user"> Activar/suspender usuario</a>
                 @endif
 
-                <a class="links">Agregar blog</a>
+                <a class="links" href="/dashboard/blog">Agregar blog</a>
             </div>
         </div>
 
@@ -27,7 +27,7 @@
 
             <a class="links"> {{ Auth::user()->email }}</a>
 
-            <a class="links" href="logout">Cerrar sesion</a>
+            <a class="links" href="/logout">Cerrar sesion</a>
         </div>
     </nav>
 
