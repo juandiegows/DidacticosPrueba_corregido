@@ -8,6 +8,8 @@
     border-radius: 1rem;
     margin: 2rem  auto;
     border: 1px solid #08d42aa6;
+    min-height: 25rem;
+    justify-content: space-between;
 }
 
 .group {
@@ -23,7 +25,7 @@ input,input:active, input:focus {
     color: inherit;
     font-size: inherit;
     cursor: pointer;
-    color: #08d42aa6;
+    color: #353232;
     border:1px solid #08d42aa6;
     border-radius: 5px;
     padding: 0.5rem 1rem;
@@ -45,7 +47,7 @@ label {
     gap: 3rem;
     margin-top: 2rem;
 }
-button, a {
+.btns button,.btns a {
     text-decoration: none;
     text-align: center;
     border: none;
@@ -59,6 +61,10 @@ button, a {
     padding: 0.5rem 1rem;
     font-size: 1vw;
 }
-.btnCancel {
+.btns .btnCancel {
     background-color: darkred;
+}
+
+small {
+    font-size: 1.6rem;
 }

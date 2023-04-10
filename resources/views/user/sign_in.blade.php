@@ -1,3 +1,8 @@
+
+@extends('template')
+
+@section('content')
+
 <link rel="stylesheet" href="{{ asset('css/form.css') }}">
 <form class="form_add" action="user/create" method="POST"
     onsubmit="return confirm('¿Está seguro de que desea guardar este usuario?')">
@@ -52,3 +57,5 @@
     </div>
 
 </form>
+
+@endsection

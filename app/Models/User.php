@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\Role;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOne;
@@ -17,14 +17,22 @@ class User extends Authenticatable
 
     protected $fillable = [
         'name',
+        'last_name',
+        'birth_day',
         'email',
         'password',
+        'role_id',
+        'created_at',
+        'active'
     ];
     public function blogs(): HasOne
     {
         return $this->HasOne(Blog::class);
     }
-
+    public function role(): BelongsTo
+    {
+        return $this->BelongsTo(Role::class);
+    }
     protected $hidden = [
         'password',
         'remember_token',
@@ -32,6 +40,7 @@ class User extends Authenticatable
 
 
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'birth_day' => 'datetime',
+        'created_at' => 'datetime',
     ];
 }

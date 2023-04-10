@@ -1,11 +1,7 @@
 @extends('template')
 
 @section('content')
-    @if (session('message'))
-        <div class="alert alert-success">
-            {{ session('message') }}
-        </div>
-    @endif
+
 
     <div class="filter">
         <h3>Seleccionar fecha</h3>

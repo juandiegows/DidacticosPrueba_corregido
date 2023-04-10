@@ -8,7 +8,7 @@
     <title>Proyecto web</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-  </head>
+</head>
 
 <body>
     <header class="header">
@@ -16,9 +16,14 @@
             <a href="/">Blog</a>
         </nav>
         <div class="links_login">
+            @auth
+                <a class="header__login" href="/dashboard">Dashboard</a>
+                    <a class="header__login" href="logout" href="">Cerrar sesion</a>
+            @else
+                <a class="header__login" href="/login">Iniciar sesion</a>
+                <a class="header__login" href="/sign_in" href="">Registrar</a>
+            @endauth
 
-            <a class="header__login" href="/">Iniciar sesion</a>
-            <a class="header__login"  href="/sign_in" href="">Registrar</a>
         </div>
 
     </header>
